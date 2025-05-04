@@ -15,6 +15,9 @@ module.exports = {
       animation: {
         float: 'float 3s ease-in-out infinite',
       },
+      screens: {
+        'gt1000': '1000px', // greater than 1000px
+      },
     },
   },
   plugins: [],

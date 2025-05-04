@@ -8,9 +8,9 @@ const Home = () => {
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['Frontend Developer', 'Graphic Designer', 'Artist'],
-      typeSpeed: 100,
-      backSpeed: 100,
+      strings: ['Fullstack Developer', 'Backend Developer', 'Frontend Developer', 'Competitive programmer', 'Content Creater'],
+      typeSpeed: 10,
+      backSpeed: 10,
       backDelay: 1000,
       loop: true,
     });
@@ -34,11 +34,15 @@ const Home = () => {
         viewport={{ amount: 0.5, once: false }}
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-white">
-          Hi, I'm <span className="text-blue-500">Dongri Pavan Kumar</span>
+          Hi, I'm
+        </h1>
+
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">
+          Dongri Pavan Kumar
         </h1>
 
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          I specialize in building modern, beautiful, and responsive web applications.
+          I specialize in building modern, beautiful, <span className='text-blue-500'> Efficient</span>,  <span className='text-blue-500'> Scalable</span>, and responsive web applications.
         </p>
 
         <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-200">
@@ -47,16 +51,17 @@ const Home = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start gap-4 text-2xl text-gray-600 dark:text-gray-300">
-          <a href="#" className="hover:text-blue-600"><i className='bx bxl-facebook'></i></a>
-          <a href="#" className="hover:text-blue-400"><i className='bx bxl-twitter'></i></a>
+          <a href="https://www.linkedin.com/in/dongri-pavan-kumar/" className="hover:text-blue-700"><i className='bx bxl-linkedin'></i></a>
+          <a href="https://x.com/PavanDongr17338" className="hover:text-blue-400"><i className='bx bxl-twitter'></i></a>
+          <a href="https://github.com/pavandongri?tab=repositories" className="hover:text-blue-400"><i className='bx bxl-github'></i> </a>
+          {/* <a href="#" className="hover:text-blue-600"><i className='bx bxl-facebook'></i></a>
           <a href="#" className="hover:text-pink-500"><i className='bx bxl-instagram'></i></a>
-          <a href="#" className="hover:text-red-600"><i className='bx bxl-youtube'></i></a>
-          <a href="#" className="hover:text-blue-700"><i className='bx bxl-linkedin'></i></a>
+          <a href="#" className="hover:text-red-600"><i className='bx bxl-youtube'></i></a> */}
         </div>
 
         {/* CV Button */}
         <a
-          href="/assets/cv.pdf"
+          href="/resume.pdf"
           className="inline-flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition"
           download
         >

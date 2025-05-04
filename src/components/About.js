@@ -34,14 +34,14 @@ const About = () => {
             About <span className="text-blue-500">Me</span>
           </h2>
           <h3 className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Frontend Developer!
+            Fullstack Developer
           </h3>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-            I am a versatile and creative designer with expertise in graphic, app, and website
-            design. With a strong eye for aesthetics and a keen understanding of user experience,
-            I create visually stunning and engaging designs that deliver results. I have experience
-            working on projects ranging from branding and marketing campaigns to user interface design,
-            brand logos, and app interface.
+            I'm an innovative software developer, specializing in scalable and user-friendly web applications.
+            Renowned for seamless collaboration, I focus on delivering premium features aligned with client and user needs.
+            My commitment to excellence is seen in meticulous code reviews, rigorous testing, and thorough debugging, ensuring top-tier performance and reliability.
+            With an unwavering passion for web development, I'm self-motivated to expand my skills, upholding the company's mission through exceptional work.
+            I thrive on crafting cutting-edge solutions that contribute to the organization's success and growth.
           </p>
         </motion.div>
       </div>

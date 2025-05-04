@@ -3,46 +3,46 @@ import RevealOnScroll from '../components/RevealOnScroll';
 
 const portfolioItems = [
     {
-        title: 'MGV ARTWORKS',
-        description: 'My own personal artwork website.',
-        imageUrl: '/images/port1.jpg',
-        link: 'https://mgvartworks.netlify.app',
+        title: 'Video Conference App',
+        description: 'Multiple people can join. Can send messages, files, videos etc',
+        imageUrl: '/images/meet-cover.jpeg',
+        link: 'https://my-meet-client.vercel.app',
     },
     {
-        title: 'Portfolio',
-        description: 'A portfolio Website.',
-        imageUrl: '/images/port2.jpg',
-        link: 'https://mgvportfolio.netlify.app',
+        title: 'Typing Racer Game',
+        description: 'Learn fast typing. Competite typing with friends.',
+        imageUrl: '/images/typer-cover.jpeg',
+        link: 'https://typeracer-client-two.vercel.app',
     },
     {
-        title: 'Artisans Avenue',
-        description: 'An E-Commerce website to sell the Artworks.',
-        imageUrl: '/images/port3.jpg',
-        link: '#',
+        title: 'Tic Tac Toe ',
+        description: 'Online Tic Tac Toe. Play with computer',
+        imageUrl: '/images/tic-tac-toe-cover.jpeg',
+        link: 'https://tic-tac-toes-taupe.vercel.app/',
     },
     {
-        title: 'Pending..',
-        description: 'Under Development',
-        imageUrl: '/images/port4.jpg',
-        link: '#',
+        title: 'Simon Game',
+        description: 'Online game to increase your IQ levels & memory',
+        imageUrl: '/images/simon-cover.jpeg',
+        link: 'https://pavandongri.github.io/simonGame',
     },
     {
-        title: 'Pending..',
-        description: 'Under Development',
-        imageUrl: '/images/port5.jpg',
-        link: '#',
+        title: 'To Do App',
+        description: 'We can store our list of to-todos, add filters, mark and unmark as done.. simple but funny',
+        imageUrl: '/images/todo-cover.jpeg',
+        link: ' https://pavandongri.github.io/To_Do_App/',
     },
 ];
 
 const Portfolio = () => {
     return (
         <section
-            id="portfolio"
+            id="projects"
             className="py-20 px-6 md:px-16 bg-gray-50 dark:bg-gray-950 transition-colors"
         >
             <RevealOnScroll y={30}>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white text-center mb-12">
-                    Latest <span className="text-blue-500">Projects</span>
+                    Self <span className="text-blue-500">Projects</span>
                 </h2>
             </RevealOnScroll>
 
