@@ -1,13 +1,14 @@
-import { useState } from 'react';
-import RevealOnScroll from '../components/RevealOnScroll'; // adjust path if needed
+import { useState } from "react";
+
+import RevealOnScroll from "../components/RevealOnScroll"; // adjust path if needed
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    mobile: '',
-    subject: '',
-    message: '',
+    fullName: "",
+    email: "",
+    mobile: "",
+    subject: "",
+    message: ""
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -16,7 +17,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: value
     }));
   };
 
@@ -24,13 +25,13 @@ const Contact = () => {
     e.preventDefault();
 
     setIsSubmitted(true);
-  
+
     setFormData({
-      fullName: '',
-      email: '',
-      mobile: '',
-      subject: '',
-      message: '',
+      fullName: "",
+      email: "",
+      mobile: "",
+      subject: "",
+      message: ""
     });
   };
 

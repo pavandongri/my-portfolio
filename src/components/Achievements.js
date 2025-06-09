@@ -6,26 +6,26 @@ const achievements = [
     title: "LeetCode",
     detail: "Rating: 2046",
     highlight: "Best Global Rank: 221",
-    link: "https://leetcode.com", 
+    link: "https://leetcode.com"
   },
   {
     title: "CodeChef",
     detail: "Rating: 1939",
     highlight: "Best Global Rank: 382",
-    link: "https://www.codechef.com",
+    link: "https://www.codechef.com"
   },
   {
     title: "Codeforces",
     detail: "Rating: 1400+",
     highlight: "Stable Performer",
-    link: "https://codeforces.com",
+    link: "https://codeforces.com"
   },
   {
     title: "HackerRank",
     detail: "6-Star Coder",
     highlight: "Gold Badge in Problem Solving",
-    link: "https://www.hackerrank.com",
-  },
+    link: "https://www.hackerrank.com"
+  }
 ];
 
 const cardVariants = {
@@ -35,9 +35,9 @@ const cardVariants = {
     y: 0,
     transition: {
       delay: i * 0.1,
-      duration: 0.5,
-    },
-  }),
+      duration: 0.5
+    }
+  })
 };
 
 export default function Achievements() {
@@ -67,12 +67,12 @@ export default function Achievements() {
             >
               <div className="flex items-center gap-3 mb-3">
                 <FaAward className="text-yellow-500 text-xl" />
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
-                  {ach.title}
-                </h3>
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{ach.title}</h3>
               </div>
               <p className="text-sm text-gray-700 dark:text-gray-300 mb-1">{ach.detail}</p>
-              <p className="text-xs text-blue-600 dark:text-blue-400 font-medium">{ach.highlight}</p>
+              <p className="text-xs text-blue-600 dark:text-blue-400 font-medium">
+                {ach.highlight}
+              </p>
             </motion.div>
           ))}
         </div>

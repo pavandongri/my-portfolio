@@ -9,8 +9,8 @@ const responsibilities = [
     details: [
       "Leading multiple full-stack projects and driving technical decisions.",
       "Collaborating with cross-functional teams to deliver scalable solutions.",
-      "Mentoring junior developers and ensuring code quality.",
-    ],
+      "Mentoring junior developers and ensuring code quality."
+    ]
   },
   {
     title: "Team Lead",
@@ -18,9 +18,9 @@ const responsibilities = [
     period: "2024 - 2025",
     details: [
       "Led a team of developers in building scalable web solutions.",
-      "Oversaw Raftaar news platform's architecture and SEO strategy.",
-    ],
-  },
+      "Oversaw Raftaar news platform's architecture and SEO strategy."
+    ]
+  }
 ];
 
 const cardVariants = {
@@ -28,8 +28,8 @@ const cardVariants = {
   visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6 },
-  }),
+    transition: { delay: i * 0.2, duration: 0.6 }
+  })
 };
 
 export default function POS() {
@@ -59,9 +59,7 @@ export default function POS() {
             >
               <div className="flex items-center gap-3 mb-3">
                 <MdOutlineWorkOutline className="text-blue-500 text-xl" />
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
-                  {res.title}
-                </h3>
+                <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{res.title}</h3>
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
                 <span className="font-medium">{res.org}</span> — {res.period}

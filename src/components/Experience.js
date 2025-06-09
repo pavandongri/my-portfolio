@@ -14,9 +14,9 @@ const experienceData = [
           "Developed and optimized features for mentra.com.",
           "Enabled seamless collaboration between recruiters and job seekers."
         ],
-        tech: ["GraphQL", "Prisma", "Stytch", "PostgreSQL"],
-      },
-    ],
+        tech: ["GraphQL", "Prisma", "Stytch", "PostgreSQL"]
+      }
+    ]
   },
   {
     company: "Jithvar Consultancy Services",
@@ -36,8 +36,16 @@ const experienceData = [
           "Resulted in 2x revenue growth and 100+ active clients."
         ],
         tech: [
-          "React.js", "Redux", "Node.js", "Express.js", "MongoDB", "WebSockets", 
-          "AWS-S3", "Redis", "Message Queues", "Javascript"
+          "React.js",
+          "Redux",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "WebSockets",
+          "AWS-S3",
+          "Redis",
+          "Message Queues",
+          "Javascript"
         ]
       },
       {
@@ -79,7 +87,7 @@ const experienceData = [
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0 }
 };
 
 export default function Experience() {
@@ -120,7 +128,9 @@ export default function Experience() {
               <div className="space-y-6">
                 {exp.projects.map((project, i) => (
                   <div key={i} className="border-l-4 border-blue-500 pl-4">
-                    <h4 className="text-xl font-semibold text-gray-800 dark:text-white">{project.name}</h4>
+                    <h4 className="text-xl font-semibold text-gray-800 dark:text-white">
+                      {project.name}
+                    </h4>
                     <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 mt-2 space-y-1">
                       {project.points.map((point, pIdx) => (
                         <li key={pIdx}>{point}</li>

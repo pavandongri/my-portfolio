@@ -1,18 +1,24 @@
-import { Download } from 'lucide-react';
-import { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
-import { motion } from 'framer-motion';
+import { Download } from "lucide-react";
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const typedRef = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ['Fullstack Developer', 'Backend Developer', 'Frontend Developer', 'Competitive programmer', 'Content Creater'],
+      strings: [
+        "Fullstack Developer",
+        "Backend Developer",
+        "Frontend Developer",
+        "Competitive programmer",
+        "Content Creater"
+      ],
       typeSpeed: 10,
       backSpeed: 10,
       backDelay: 1000,
-      loop: true,
+      loop: true
     });
 
     return () => {
@@ -42,7 +48,9 @@ const Home = () => {
         </h1>
 
         <p className="text-lg text-gray-600 dark:text-gray-300">
-          I specialize in building modern, beautiful, <span className='text-blue-500'> Efficient</span>,  <span className='text-blue-500'> Scalable</span>, and responsive web applications.
+          I specialize in building modern, beautiful,{" "}
+          <span className="text-blue-500"> Efficient</span>,{" "}
+          <span className="text-blue-500"> Scalable</span>, and responsive web applications.
         </p>
 
         <p className="text-xl sm:text-2xl text-gray-700 dark:text-gray-200">
@@ -51,9 +59,15 @@ const Home = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start gap-4 text-2xl text-gray-600 dark:text-gray-300">
-          <a href="https://www.linkedin.com/in/dongri-pavan-kumar/" className="hover:text-blue-700"><i className='bx bxl-linkedin'></i></a>
-          <a href="https://x.com/PavanDongr17338" className="hover:text-blue-400"><i className='bx bxl-twitter'></i></a>
-          <a href="https://github.com/pavandongri?tab=repositories" className="hover:text-blue-400"><i className='bx bxl-github'></i> </a>
+          <a href="https://www.linkedin.com/in/dongri-pavan-kumar/" className="hover:text-blue-700">
+            <i className="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://x.com/PavanDongr17338" className="hover:text-blue-400">
+            <i className="bx bxl-twitter"></i>
+          </a>
+          <a href="https://github.com/pavandongri?tab=repositories" className="hover:text-blue-400">
+            <i className="bx bxl-github"></i>{" "}
+          </a>
           {/* <a href="#" className="hover:text-blue-600"><i className='bx bxl-facebook'></i></a>
           <a href="#" className="hover:text-pink-500"><i className='bx bxl-instagram'></i></a>
           <a href="#" className="hover:text-red-600"><i className='bx bxl-youtube'></i></a> */}

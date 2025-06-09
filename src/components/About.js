@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -37,11 +37,14 @@ const About = () => {
             Fullstack Developer
           </h3>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-            I'm an innovative software developer, specializing in scalable and user-friendly web applications.
-            Renowned for seamless collaboration, I focus on delivering premium features aligned with client and user needs.
-            My commitment to excellence is seen in meticulous code reviews, rigorous testing, and thorough debugging, ensuring top-tier performance and reliability.
-            With an unwavering passion for web development, I'm self-motivated to expand my skills, upholding the company's mission through exceptional work.
-            I thrive on crafting cutting-edge solutions that contribute to the organization's success and growth.
+            I'm an innovative software developer, specializing in scalable and user-friendly web
+            applications. Renowned for seamless collaboration, I focus on delivering premium
+            features aligned with client and user needs. My commitment to excellence is seen in
+            meticulous code reviews, rigorous testing, and thorough debugging, ensuring top-tier
+            performance and reliability. With an unwavering passion for web development, I'm
+            self-motivated to expand my skills, upholding the company's mission through exceptional
+            work. I thrive on crafting cutting-edge solutions that contribute to the organization's
+            success and growth.
           </p>
         </motion.div>
       </div>

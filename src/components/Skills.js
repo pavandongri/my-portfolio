@@ -5,27 +5,50 @@ const skillsData = [
   {
     icon: <FaCode className="text-blue-500 text-2xl" />,
     title: "Programming Languages",
-    skills: ["C++", "JavaScript", "Ruby", "C", "Java (Novice)", "Python (Novice)"],
+    skills: ["C++", "JavaScript", "Ruby", "C", "Java (Novice)", "Python (Novice)"]
   },
   {
     icon: <FaTools className="text-green-500 text-2xl" />,
     title: "Core Skills",
-    skills: ["DSA", "OOPs", "DBMS", "Operating Systems", "Computer Networks"],
+    skills: ["DSA", "OOPs", "DBMS", "Operating Systems", "Computer Networks"]
   },
   {
     icon: <FaServer className="text-purple-500 text-2xl" />,
     title: "Web Development",
     skills: [
-      "HTML", "CSS", "JavaScript", "TypeScript", "Bootstrap", "Node.js", "Express.js",
-      "React.js", "Next.js", "Redux", "Ruby on Rails", "WebSockets", "AWS", "Redis",
-      "Message Queues", "Kafka", "WebRTC", "Graphql", "Prisma", "Git", "GitHub", "RESTful API", "Java", "Springboot", "MERN", "Docker"
-    ],
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Bootstrap",
+      "Node.js",
+      "Express.js",
+      "React.js",
+      "Next.js",
+      "Redux",
+      "Ruby on Rails",
+      "WebSockets",
+      "AWS",
+      "Redis",
+      "Message Queues",
+      "Kafka",
+      "WebRTC",
+      "Graphql",
+      "Prisma",
+      "Git",
+      "GitHub",
+      "RESTful API",
+      "Java",
+      "Springboot",
+      "MERN",
+      "Docker"
+    ]
   },
   {
     icon: <FaDatabase className="text-red-500 text-2xl" />,
     title: "Databases & Tools",
-    skills: ["MongoDB", "MySQL", "PostgreSQL"],
-  },
+    skills: ["MongoDB", "MySQL", "PostgreSQL"]
+  }
 ];
 
 const containerVariants = {
@@ -33,13 +56,13 @@ const containerVariants = {
   visible: (i = 1) => ({
     opacity: 1,
     y: 0,
-    transition: { staggerChildren: 0.07, delayChildren: 0.2 * i },
-  }),
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 * i }
+  })
 };
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0 }
 };
 
 export default function Skills() {
@@ -68,7 +91,9 @@ export default function Skills() {
             >
               <div className="flex items-center gap-3 mb-4">
                 {category.icon}
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">{category.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
+                  {category.title}
+                </h3>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">

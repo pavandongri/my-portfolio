@@ -4,20 +4,14 @@ import { FaTrophy, FaMusic } from "react-icons/fa"; // Using FaTrophy for sports
 const activities = [
   {
     category: "Sports",
-    items: [
-      "Cricket",
-      "Badminton",
-      "Basketball",
-      "Athletics",
-      "Kho Kho",
-    ],
-    icon: <FaTrophy className="text-green-500 text-2xl" />,
+    items: ["Cricket", "Badminton", "Basketball", "Athletics", "Kho Kho"],
+    icon: <FaTrophy className="text-green-500 text-2xl" />
   },
   {
     category: "Musical Instruments",
     items: ["Flute", "Piano"],
-    icon: <FaMusic className="text-blue-500 text-2xl" />,
-  },
+    icon: <FaMusic className="text-blue-500 text-2xl" />
+  }
 ];
 
 const cardVariants = {
@@ -25,8 +19,8 @@ const cardVariants = {
   visible: (i) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.2, duration: 0.6 },
-  }),
+    transition: { delay: i * 0.2, duration: 0.6 }
+  })
 };
 
 export default function ExtraCurricularActivities() {
@@ -67,9 +61,7 @@ export default function ExtraCurricularActivities() {
                     key={idx}
                     className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-4 rounded-lg shadow hover:shadow-xl transition-all duration-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-600"
                   >
-                    <p className="text-gray-800 dark:text-white text-center font-medium">
-                      {item}
-                    </p>
+                    <p className="text-gray-800 dark:text-white text-center font-medium">{item}</p>
                   </div>
                 ))}
               </div>
