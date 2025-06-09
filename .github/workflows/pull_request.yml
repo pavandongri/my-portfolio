@@ -59,4 +59,4 @@ jobs:
         run: npm ci
 
       - name: Run Prettier Check
-        run: npx prettier --check "**/*.{js,ts,tsx,json,css,md}" 
+        run: npm run format
