@@ -41,3 +41,22 @@ jobs:
 
       - name: Run Linter
         run: npm run lint
+
+  prettier:
+    needs: setup
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ needs.setup.outputs.node-version }}
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Prettier Check
+        run: npx prettier --check "**/*.{js,ts,tsx,json,css,md}" 
